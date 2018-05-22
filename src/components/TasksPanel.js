@@ -29,13 +29,13 @@ function TasksPanel(props) {
         <div className="panel-body">
             <div className="list-group">
     
-               Name: <input id="taskName" />
+               Task: <input id="taskName" />
                Date: <input id="taskDate"/>
                <button onClick={
                 ()=>{
-                    let name = document.getElementById("taskName").value;
+                    let task = document.getElementById("taskName").value;
                     let date = document.getElementById("taskDate").value;
-                    createData.task({name,date});
+                    createData.task({task,date});
                 }
                }>Create</button>
                  
